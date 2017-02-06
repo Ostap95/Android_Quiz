@@ -2,6 +2,9 @@
 
     <string name="app_name">Android Quiz</string>
 
+    <string name="finish_quiz">Finish</string>
+    <string name="edit_text_question1_hint">Year</string>
+
     <!-- Quiz questions -->
     <string name="question_1">Q1. What year was Android founded?</string>
     <string name="question_2">Q2. What does AOSP stand for?</string>
@@ -14,11 +17,11 @@
     <string name="question_9">Q9. Which of the following holds Java source code for the application?</string>
     <string name="question_10">Q10. An Android SDK is required to develop the application for Android.</string>
 
-    <!-- Question 1 choices -->
+    <!-- Question 1 choices
     <string name="question_1_choiceA">2003</string>
     <string name="question_1_choiceB">2008</string>
     <string name="question_1_choiceC">2001</string>
-    <string name="question_1_choiceD">2005</string>
+    <string name="question_1_choiceD">2005</string> -->
 
     <!-- Question 2 choices -->
     <string name="question_2_choiceA">Android Operating System Project</string>
