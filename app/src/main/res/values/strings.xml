@@ -15,7 +15,68 @@
     <string name="question_10">Q10. Which of the following holds Java source code for the application?</string>
     <string name="question_11">Q11. An Android SDK is required to develop the application for Android.</string>
 
+    <!-- Question 1 choices -->
+    <string name="question_1_choiceA">2003</string>
+    <string name="question_1_choiceB">2008</string>
+    <string name="question_1_choiceC">2001</string>
+    <string name="question_1_choiceD">2005</string>
 
+    <!-- Question 2 choices -->
+    <string name="question_2_choiceA">Android Operating System Project</string>
+    <string name="question_2_choiceB">Android Open Source Project</string>
+    <string name="question_2_choiceC">Android Open Stack Programming</string>
+    <string name="question_2_choiceD">Android Open Source Protocol</string>
 
+    <!-- Question 3 choices -->
+    <string name="question_3_choiceA">Apple</string>
+    <string name="question_3_choiceB">Google</string>
+    <string name="question_3_choiceC">Android Inc.</string>
+    <string name="question_3_choiceD">Nokia</string>
+
+    <!-- Question 4 choices -->
+    <string name="question_4_choiceA">Apple</string>
+    <string name="question_4_choiceB">No company</string>
+    <string name="question_4_choiceC">Nokia</string>
+    <string name="question_4_choiceD">Google</string>
+
+    <!-- Question 5 choices -->
+    <string name="question_5_choiceA">C</string>
+    <string name="question_5_choiceB">C++</string>
+    <string name="question_5_choiceC">Python</string>
+    <string name="question_5_choiceD">Java</string>
+
+    <!-- Question 6 choices -->
+    <string name="question_6_choiceA">Nothing</string>
+    <string name="question_6_choiceB">The android version number</string>
+    <string name="question_6_choiceC">The release date</string>
+    <string name="question_6_choiceD">The build number</string>
+
+    <!-- Question 7 choices -->
+    <string name="question_7_choiceA">R.style</string>
+    <string name="question_7_choiceB">X.style</string>
+    <string name="question_7_choiceC">manifest.XML</string>
+    <string name="question_7_choiceD">Application</string>
+
+    <!-- Question 8 choices -->
+    <string name="question_8_choiceA">Eclipse</string>
+    <string name="question_8_choiceB">Java and XML</string>
+    <string name="question_8_choiceC">Java and SQL</string>
+    <string name="question_8_choiceD">Java and Python</string>
+
+    <!-- Question 9 choices -->
+    <string name="question_9_choiceA">Android Debug Bridge</string>
+    <string name="question_9_choiceB">Application Debug Bridge</string>
+    <string name="question_9_choiceC">Android Data Bridge</string>
+    <string name="question_9_choiceD">Application Data Bridge</string>
+
+    <!-- Question 10 choices -->
+    <string name="question_10_choiceA">res/</string>
+    <string name="question_10_choiceB">assets/</string>
+    <string name="question_10_choiceC">src/</string>
+    <string name="question_10_choiceD">bin/</string>
+
+    <!-- Question 11 choices -->
+    <string name="question_11_choiceA">Yes</string>
+    <string name="question_11_choiceB">No</string>
 
 </resources>
