@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="app_name">Android_Quiz</string>
+
+    <!-- Quiz questions -->
+    <string name="question_1">Q1. What year was Android founded?</string>
+    <string name="question_2">Q2. What does AOSP stand for?</string>
+    <string name="question_3">Q3. Which company developed Android?</string>
+    <string name="question_4">Q4. Which company bought Android?</string>
+    <string name="question_5">Q5. Android is based on which language?</string>
+    <string name="question_6">Q6. What does the time often denote in Android product shots?</string>
+    <string name="question_7">Q7. Android provides a few standard themes, listed in ______.</string>
+    <string name="question_8">Q8. For creating user interface in Android, you have to use</string>
+    <string name="question_9">Q9. ADB stands for</string>
+    <string name="question_10">Q10. Which of the following holds Java source code for the application?</string>
+    <string name="question_11">Q11. An Android SDK is required to develop the application for Android.</string>
+
+
+
+
+</resources>
