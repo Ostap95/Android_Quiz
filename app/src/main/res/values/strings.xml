@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name">Android_Quiz</string>
+    <string name="app_name">Android Quiz</string>
 
     <!-- Quiz questions -->
     <string name="question_1">Q1. What year was Android founded?</string>
@@ -9,11 +9,10 @@
     <string name="question_4">Q4. Which company bought Android?</string>
     <string name="question_5">Q5. Android is based on which language?</string>
     <string name="question_6">Q6. What does the time often denote in Android product shots?</string>
-    <string name="question_7">Q7. Android provides a few standard themes, listed in ______.</string>
-    <string name="question_8">Q8. For creating user interface in Android, you have to use</string>
-    <string name="question_9">Q9. ADB stands for</string>
-    <string name="question_10">Q10. Which of the following holds Java source code for the application?</string>
-    <string name="question_11">Q11. An Android SDK is required to develop the application for Android.</string>
+    <string name="question_7">Q7. For creating user interface in Android, you have to use</string>
+    <string name="question_8">Q8. ADB stands for</string>
+    <string name="question_9">Q9. Which of the following holds Java source code for the application?</string>
+    <string name="question_10">Q10. An Android SDK is required to develop the application for Android.</string>
 
     <!-- Question 1 choices -->
     <string name="question_1_choiceA">2003</string>
@@ -52,31 +51,25 @@
     <string name="question_6_choiceD">The build number</string>
 
     <!-- Question 7 choices -->
-    <string name="question_7_choiceA">R.style</string>
-    <string name="question_7_choiceB">X.style</string>
-    <string name="question_7_choiceC">manifest.XML</string>
-    <string name="question_7_choiceD">Application</string>
+    <string name="question_7_choiceA">Eclipse</string>
+    <string name="question_7_choiceB">Java</string>
+    <string name="question_7_choiceC">XML</string>
+    <string name="question_7_choiceD">SQL</string>
 
     <!-- Question 8 choices -->
-    <string name="question_8_choiceA">Eclipse</string>
-    <string name="question_8_choiceB">Java and XML</string>
-    <string name="question_8_choiceC">Java and SQL</string>
-    <string name="question_8_choiceD">Java and Python</string>
+    <string name="question_8_choiceA">Android Debug Bridge</string>
+    <string name="question_8_choiceB">Application Debug Bridge</string>
+    <string name="question_8_choiceC">Android Data Bridge</string>
+    <string name="question_8_choiceD">Application Data Bridge</string>
 
     <!-- Question 9 choices -->
-    <string name="question_9_choiceA">Android Debug Bridge</string>
-    <string name="question_9_choiceB">Application Debug Bridge</string>
-    <string name="question_9_choiceC">Android Data Bridge</string>
-    <string name="question_9_choiceD">Application Data Bridge</string>
+    <string name="question_9_choiceA">res/</string>
+    <string name="question_9_choiceB">assets/</string>
+    <string name="question_9_choiceC">src/</string>
+    <string name="question_9_choiceD">bin/</string>
 
     <!-- Question 10 choices -->
-    <string name="question_10_choiceA">res/</string>
-    <string name="question_10_choiceB">assets/</string>
-    <string name="question_10_choiceC">src/</string>
-    <string name="question_10_choiceD">bin/</string>
-
-    <!-- Question 11 choices -->
-    <string name="question_11_choiceA">Yes</string>
-    <string name="question_11_choiceB">No</string>
+    <string name="question_10_choiceA">Yes</string>
+    <string name="question_10_choiceB">No</string>
 
 </resources>
