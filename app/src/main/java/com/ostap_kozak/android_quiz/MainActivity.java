@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText question1_answer;
@@ -23,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         score = 0;
 
         question1_answer = (EditText) findViewById(R.id.question_1_edit_text);
@@ -44,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void finishQuiz(View view) {
 
+        buildResultDialog();
+
         if (Integer.valueOf(question1_answer.getText().toString()) == 2003) score++;
         if (radio_group_question2.getCheckedRadioButtonId() == R.id.question_2_choiceB) score++;
         if (radio_group_question3.getCheckedRadioButtonId() == R.id.question_3_choiceC) score++;
@@ -58,6 +63,16 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, Integer.toString(score), Toast.LENGTH_LONG).show();
 
         score = 0;
+    }
+
+    public void buildResultDialog() {
+        FragmentManager fm = getSupportFragmentManager();
+        ResultsDialog dialog = ResultsDialog.newInstance("False");
+        dialog.show(fm,"TAG");
+    }
+
+    public ArrayList buildResultArray() {
+        
     }
 }
 
