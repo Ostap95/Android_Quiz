@@ -1,8 +1,11 @@
 package com.ostap_kozak.android_quiz;
 
+import android.content.res.Resources;
+import android.support.annotation.IntegerRes;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -12,7 +15,6 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-
     private EditText question1_answer;
     private RadioGroup radio_group_question2, radio_group_question3, radio_group_question4, radio_group_question5
             , radio_group_question6, radio_group_question8, radio_group_question9, radio_group_question10;
@@ -20,13 +22,20 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox question7_A, question7_B, question7_C, question7_D;
 
     private int score;
+    private ArrayList<Integer> radioButtonResults;
+    private ArrayList<String> editTextResults;
+    private boolean[] checkBoxResults;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Initialization
         score = 0;
+        radioButtonResults = new ArrayList<>();
+        editTextResults = new ArrayList<>();
+        checkBoxResults = new boolean[]{false, false, false, false};
 
         question1_answer = (EditText) findViewById(R.id.question_1_edit_text);
         radio_group_question2 = (RadioGroup) findViewById(R.id.radio_group_question2);
@@ -46,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void finishQuiz(View view) {
-
         buildResultDialog();
 
         if (Integer.valueOf(question1_answer.getText().toString()) == 2003) score++;
@@ -60,19 +68,40 @@ public class MainActivity extends AppCompatActivity {
         if (radio_group_question9.getCheckedRadioButtonId() == R.id.question_9_choiceC) score++;
         if (radio_group_question10.getCheckedRadioButtonId() == R.id.question_10_choiceA) score++;
 
-        Toast.makeText(this, Integer.toString(score), Toast.LENGTH_LONG).show();
-
         score = 0;
     }
 
     public void buildResultDialog() {
+        buildQuizResult();
         FragmentManager fm = getSupportFragmentManager();
-        ResultsDialog dialog = ResultsDialog.newInstance("False");
+        ResultsDialog dialog = ResultsDialog.newInstance(radioButtonResults, checkBoxResults, editTextResults);
         dialog.show(fm,"TAG");
     }
 
-    public ArrayList buildResultArray() {
-        
+
+    /**
+     * Stores quiz choices inside arrays
+     */
+    public void buildQuizResult() {
+        radioButtonResults.clear();
+        editTextResults.clear();
+
+        radioButtonResults.add(radio_group_question2.getCheckedRadioButtonId());
+        radioButtonResults.add(radio_group_question3.getCheckedRadioButtonId());
+        radioButtonResults.add(radio_group_question4.getCheckedRadioButtonId());
+        radioButtonResults.add(radio_group_question5.getCheckedRadioButtonId());
+        radioButtonResults.add(radio_group_question6.getCheckedRadioButtonId());
+        radioButtonResults.add(radio_group_question8.getCheckedRadioButtonId());
+        radioButtonResults.add(radio_group_question9.getCheckedRadioButtonId());
+        radioButtonResults.add(radio_group_question10.getCheckedRadioButtonId());
+
+        editTextResults.add(question1_answer.getText().toString());
+
+        checkBoxResults[0] = question7_A.isChecked();
+        checkBoxResults[1] = question7_B.isChecked();
+        checkBoxResults[2] = question7_C.isChecked();
+        checkBoxResults[3] = question7_D.isChecked();
     }
+
 }
 
