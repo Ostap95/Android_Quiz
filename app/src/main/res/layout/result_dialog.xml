@@ -56,6 +56,7 @@
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:id="@+id/card_view_question2"
             card_view:cardCornerRadius="4dp">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -118,6 +119,7 @@
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:id="@+id/card_view_question3"
             card_view:cardCornerRadius="4dp">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -179,6 +181,7 @@
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:id="@+id/card_view_question4"
             card_view:cardCornerRadius="4dp">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -240,6 +243,7 @@
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:id="@+id/card_view_question5"
             card_view:cardCornerRadius="4dp">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -301,6 +305,7 @@
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:id="@+id/card_view_question6"
             card_view:cardCornerRadius="4dp">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -363,6 +368,7 @@
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:id="@+id/card_view_question7"
             card_view:cardCornerRadius="4dp">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -418,6 +424,7 @@
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:id="@+id/card_view_question8"
             card_view:cardCornerRadius="4dp">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -479,6 +486,7 @@
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:id="@+id/card_view_question9"
             card_view:cardCornerRadius="4dp">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -541,6 +549,7 @@
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
             android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:id="@+id/card_view_question10"
             card_view:cardCornerRadius="4dp">
             <LinearLayout
                 android:layout_width="match_parent"

@@ -20,8 +20,6 @@ public class MainActivity extends AppCompatActivity {
             , radio_group_question6, radio_group_question8, radio_group_question9, radio_group_question10;
 
     private CheckBox question7_A, question7_B, question7_C, question7_D;
-
-    private int score;
     private ArrayList<Integer> radioButtonResults;
     private ArrayList<String> editTextResults;
     private boolean[] checkBoxResults;
@@ -31,8 +29,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Initialization
-        score = 0;
         radioButtonResults = new ArrayList<>();
         editTextResults = new ArrayList<>();
         checkBoxResults = new boolean[]{false, false, false, false};
@@ -56,19 +52,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void finishQuiz(View view) {
         buildResultDialog();
-
-        if (Integer.valueOf(question1_answer.getText().toString()) == 2003) score++;
-        if (radio_group_question2.getCheckedRadioButtonId() == R.id.question_2_choiceB) score++;
-        if (radio_group_question3.getCheckedRadioButtonId() == R.id.question_3_choiceC) score++;
-        if (radio_group_question4.getCheckedRadioButtonId() == R.id.question_4_choiceD) score++;
-        if (radio_group_question5.getCheckedRadioButtonId() == R.id.question_5_choiceD) score++;
-        if (radio_group_question6.getCheckedRadioButtonId() == R.id.question_6_choiceB) score++;
-        if (question7_A.isChecked() == false & question7_B.isChecked() == true & question7_C.isChecked() == true & question7_D.isChecked() == false) score++;
-        if (radio_group_question8.getCheckedRadioButtonId() == R.id.question_8_choiceA) score++;
-        if (radio_group_question9.getCheckedRadioButtonId() == R.id.question_9_choiceC) score++;
-        if (radio_group_question10.getCheckedRadioButtonId() == R.id.question_10_choiceA) score++;
-
-        score = 0;
     }
 
     public void buildResultDialog() {
