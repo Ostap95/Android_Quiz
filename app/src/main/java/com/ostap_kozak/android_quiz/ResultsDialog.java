@@ -63,6 +63,8 @@ public class ResultsDialog extends DialogFragment {
         buildEditTextResult(view, getArguments().getStringArrayList("editTexts"));
         buildRadioButtonsResult(view, getArguments().getIntegerArrayList("radioButtons"));
         buildCheckBoxResult(view, getArguments().getBooleanArray("checkBoxes"));
+        
+        Toast.makeText(getContext(), "Your score: "+ score + "/10", Toast.LENGTH_LONG).show();
 
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getActivity());
         alertDialogBuilder.setTitle("Your score: "+ score + "/10");
